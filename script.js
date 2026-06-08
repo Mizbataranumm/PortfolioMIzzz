@@ -248,6 +248,7 @@ const modalBody = document.querySelector("#modalBody");
 const modalClose = document.querySelector("#modalClose");
 const modalBackdrop = document.querySelector("#modalBackdrop");
 const filters = document.querySelectorAll(".filter");
+const themeToggle = document.querySelector("#themeToggle");
 const contactForm = document.querySelector("#contactForm");
 const contactSubmit = document.querySelector("#contactSubmit");
 const formStatus = document.querySelector("#formStatus");
@@ -618,6 +619,11 @@ window.addEventListener("scroll", updateHeaderState, { passive: true });
 window.addEventListener("scroll", updateTimelineProgress, { passive: true });
 window.addEventListener("resize", updateTimelineProgress);
 
+themeToggle?.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+  localStorage.setItem("mizba-theme", document.body.classList.contains("light") ? "light" : "dark");
+});
+
 contactForm?.addEventListener("submit", (event) => {
   event.preventDefault();
   const data = new FormData(contactForm);
@@ -657,6 +663,10 @@ contactForm?.addEventListener("submit", (event) => {
 
 if (footerYear) {
   footerYear.textContent = String(new Date().getFullYear());
+}
+
+if (localStorage.getItem("mizba-theme") === "light") {
+  document.body.classList.add("light");
 }
 
 renderProjects();
