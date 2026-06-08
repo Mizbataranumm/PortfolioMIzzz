@@ -294,7 +294,7 @@ function renderProjects(filter = "all") {
                 <h3>${project.title}</h3>
                 <p>${project.tagline}</p>
               </div>
-              <button class="project-open" type="button" data-open-project="${project.id}" aria-label="Open case study for ${project.title}">NE</button>
+              <button class="project-open" type="button" data-open-project="${project.id}" aria-label="Open case study for ${project.title}">Open</button>
             </div>
             <p>${project.description}</p>
             <ul class="tag-list">
