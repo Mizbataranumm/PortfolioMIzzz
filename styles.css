@@ -686,6 +686,21 @@ body.light .section-heading > p {
   color: #d4d4d8;
 }
 
+body.light .button.secondary {
+  border-color: rgba(37, 99, 235, 0.22);
+  background: rgba(255, 255, 255, 0.76);
+  color: #1d4ed8;
+  box-shadow: 0 12px 34px rgba(37, 99, 235, 0.12);
+}
+
+body.light .button.text-link {
+  color: #7c3aed;
+}
+
+body.light .button.text-link:hover {
+  color: #db2777;
+}
+
 .button.text-link:hover {
   color: #ffffff;
 }
@@ -928,6 +943,7 @@ body.light .footer-socials a {
   width: 100%;
   aspect-ratio: 16 / 10;
   object-fit: cover;
+  filter: saturate(1.08) contrast(1.08);
   transition: transform 700ms ease;
 }
 
@@ -1029,11 +1045,11 @@ body.light .footer-socials a {
 }
 
 body.light .project-media-shade {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.08), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.08));
 }
 
 body.light .project-media::after {
-  opacity: 0.28;
+  opacity: 0.18;
 }
 
 .project-open:hover {
