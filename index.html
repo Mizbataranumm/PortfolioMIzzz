@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mizba Taranum is a full-stack developer and AWS-certified cloud security learner building secure web applications."
+    />
+    <meta
+      name="keywords"
+      content="Mizba Taranum, cybersecurity portfolio, full-stack developer, AWS cloud security, secure applications"
+    />
+    <meta property="og:title" content="Mizba Taranum | Secure Full-Stack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Mizba Taranum, focused on authentication, secure APIs, cloud security, and resilient full-stack systems."
+    />
+    <meta property="og:image" content="assets/security-command-center.png" />
+    <title>Mizba Taranum | Secure Full-Stack Developer</title>
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen" aria-hidden="true">
+      <div class="loading-grid"></div>
+      <div class="loading-fade"></div>
+      <div class="loading-content">
+        <div class="loading-line"></div>
+        <div class="loading-text">Initializing experience</div>
+        <div class="loading-logo">MT</div>
+      </div>
+    </div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <header class="site-header" id="siteHeader">
+      <button class="brand" type="button" data-scroll-target="home" aria-label="Mizba Taranum home">
+        <span class="brand-mark">M</span>
+        <span>Mizba<span class="brand-dot">.</span>Taranum</span>
+      </button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <button class="nav-link active" type="button" data-scroll-target="home">Home</button>
+        <button class="nav-link" type="button" data-scroll-target="about">About</button>
+        <button class="nav-link" type="button" data-scroll-target="skills">Skills</button>
+        <button class="nav-link" type="button" data-scroll-target="projects">Projects</button>
+        <button class="nav-link" type="button" data-scroll-target="achievements">Achievements</button>
+        <button class="nav-link" type="button" data-scroll-target="experience">Journey</button>
+        <button class="nav-link" type="button" data-scroll-target="contact">Contact</button>
+      </nav>
+      <div class="header-actions">
+        <button class="button nav-cta" type="button" data-scroll-target="contact">Let's talk</button>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle menu" aria-expanded="false">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+      <nav class="mobile-panel" id="mobilePanel" aria-label="Mobile navigation">
+        <button type="button" data-scroll-target="home">Home</button>
+        <button type="button" data-scroll-target="about">About</button>
+        <button type="button" data-scroll-target="skills">Skills</button>
+        <button type="button" data-scroll-target="projects">Projects</button>
+        <button type="button" data-scroll-target="achievements">Achievements</button>
+        <button type="button" data-scroll-target="experience">Journey</button>
+        <button type="button" data-scroll-target="contact">Contact</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-band" id="home">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-fade" aria-hidden="true"></div>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="particles" id="particles" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="hero-pill">Open to Roles - 2026</p>
+          <h1><span class="gradient-text">Mizba Taranum</span></h1>
+          <p class="hero-role">
+            Full-Stack Developer | Application Security & Cloud Security
+            <span>Computer Engineering Student</span>
+          </p>
+          <p class="hero-lede">
+            <span id="heroTyper" data-text="Building secure, intelligent systems that solve real-world problems."></span>
+            <span class="caret" aria-hidden="true"></span>
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Work</a>
+            <a class="button secondary" href="assets/MizbaTaranum_Resume.pdf" download>Download Resume</a>
+            <a class="button text-link" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://github.com/Mizbataranumm" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+            <a href="https://linkedin.com/in/mizba-taranum" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+            <a href="mailto:mizbataranum309@gmail.com" aria-label="Email">Mail</a>
+          </div>
+          <dl class="quick-stats" aria-label="Quick portfolio facts">
+            <div>
+              <dt>CGPA</dt>
+              <dd>8.96</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Secure Apps</dd>
+            </div>
+            <div>
+              <dt>Experience</dt>
+              <dd>1+ Years</dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="hero-visual">
+          <img
+            src="assets/security-command-center.png"
+            alt="Security operations dashboard illustration with alerts, network nodes, and analytics panels"
+          />
+          <figcaption>
+            Security-minded engineering across authentication, APIs, cloud, and product delivery.
+          </figcaption>
+        </figure>
+        <p class="scroll-hint" aria-hidden="true">scroll</p>
+      </section>
+
+      <section class="about section-band" id="about" aria-labelledby="about-title">
+        <article class="about-manifesto">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">
+            Engineer building <span class="gradient-text">secure, AI-aware</span> products that
+            actually ship.
+          </h2>
+          <p>
+            Computer Engineering student with CGPA 8.96, focused on secure full-stack applications,
+            authentication systems, cloud security, and practical AI integrations. I work across
+            React, FastAPI, Node.js, MongoDB, JWT, Gemini AI, and real-time systems with a security
+            mindset from the first design decision.
+          </p>
+          <p>
+            My direction is application security and cloud security engineering: building useful
+            products, then hardening the APIs, access control, data flows, and deployment choices
+            that make those products trustworthy.
+          </p>
+          <div class="about-tags" aria-label="Focus areas">
+            <span>Application Security</span>
+            <span>Secure Backends</span>
+            <span>Cloud Security</span>
+            <span>JWT & RBAC</span>
+            <span>AI Integrations</span>
+          </div>
+        </article>
+        <div class="about-stats" aria-label="Portfolio stats">
+          <article class="stat-card trace-border">
+            <strong class="counter" data-value="8.96" data-decimals="2">0.00</strong>
+            <span>CGPA</span>
+          </article>
+          <article class="stat-card trace-border">
+            <strong class="counter" data-value="5" data-suffix="+">0</strong>
+            <span>Security Projects</span>
+          </article>
+          <article class="stat-card trace-border">
+            <strong class="counter" data-value="6" data-suffix="+">0</strong>
+            <span>Certifications</span>
+          </article>
+          <article class="stat-card trace-border">
+            <strong class="counter" data-value="1" data-suffix="+">0</strong>
+            <span>Years Building</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section-band" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Toolkit</p>
+            <h2 id="skills-title">The stack I <span class="gradient-text">build with</span>.</h2>
+          </div>
+          <p>
+            Production-minded across secure full-stack, AI integrations, backend systems, and
+            cloud. Categorized for clarity: depth over buzzwords.
+          </p>
+        </div>
+        <div class="skill-grid" id="skillGrid"></div>
+        <div class="tech-marquee" aria-label="Technology highlights">
+          <div class="marquee-track" id="techMarquee"></div>
+        </div>
+      </section>
+
+      <section class="projects section-band" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2 id="projects-title">Projects with <span class="gradient-text">real impact</span>.</h2>
+          </div>
+          <p>
+            Production builds and planned security labs combining AI, real-time architecture,
+            backend security, and clean UX. Open any case study for a deeper look.
+          </p>
+        </div>
+        <div class="filters" aria-label="Filter projects">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="security">Security</button>
+          <button class="filter" type="button" data-filter="fullstack">Full-stack</button>
+          <button class="filter" type="button" data-filter="planned">Planned</button>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+        <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true">
+          <button class="modal-backdrop" id="modalBackdrop" type="button" aria-label="Close case study"></button>
+          <article class="modal-card">
+            <button class="modal-close" id="modalClose" type="button" aria-label="Close case study">X</button>
+            <div id="modalBody"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="achievements section-band" id="achievements" aria-labelledby="achievements-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Achievements</p>
+            <h2 id="achievements-title">Recognition & <span class="gradient-text">milestones</span>.</h2>
+          </div>
+          <p>
+            Selected signals across academics, cloud learning, cybersecurity foundations,
+            community leadership, and project-driven growth.
+          </p>
+        </div>
+        <div class="achievement-grid" id="achievementGrid"></div>
+      </section>
+
+      <section class="journey section-band" id="experience" aria-labelledby="journey-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Journey</p>
+            <h2 id="journey-title">The arc so <span class="gradient-text">far</span>.</h2>
+          </div>
+          <p>
+            Engineering, full-stack products, cloud security, AI integrations, and hands-on
+            application security growth.
+          </p>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="timeline-base" aria-hidden="true"></div>
+          <div class="timeline-progress" id="timelineProgress" aria-hidden="true"></div>
+          <ul class="timeline-list" id="timelineList"></ul>
+        </div>
+      </section>
+
+      <section class="contact section-band" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let's build <span class="gradient-text">something good</span>.</h2>
+            <p>
+              Open to cybersecurity internships, backend security engineering roles,
+              security-focused full-stack opportunities, and meaningful collaborations. Drop a
+              message. I read everything.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:mizbataranum309@gmail.com">mizbataranum309@gmail.com</a>
+              <a href="tel:+919632815512">+91 9632815512</a>
+              <a href="https://linkedin.com/in/mizba-taranum">LinkedIn</a>
+              <a href="https://github.com/Mizbataranumm">GitHub</a>
+            </div>
+          </div>
+          <form id="contactForm">
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" placeholder="you@domain.com" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell me about the role, project, or idea..." required></textarea>
+            </label>
+            <button class="button primary" id="contactSubmit" type="submit">Send message</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div>
+          <p class="eyebrow">Built with care</p>
+          <p>Copyright <span id="footerYear">2026</span> Mizba Taranum. All rights reserved.</p>
+          <p>Shivamogga, Karnataka, India.</p>
+        </div>
+        <div class="footer-socials" aria-label="Footer social links">
+          <a href="https://github.com/Mizbataranumm" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com/in/mizba-taranum" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+          <a href="mailto:mizbataranum309@gmail.com" aria-label="Email">Mail</a>
+          <a href="#home" aria-label="Back to top">Top</a>
+        </div>
+      </div>
+      <div class="footer-watermark" aria-hidden="true">MIZBA.TARANUM</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
