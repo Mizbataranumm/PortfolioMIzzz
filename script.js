@@ -129,6 +129,84 @@ const projects = [
       { label: "Discuss", href: "#contact" },
     ],
   },
+  {
+    id: "house-price",
+    name: "Indian House Price Prediction System",
+    title: "Indian House Price Prediction System",
+    tagline: "Machine learning pipeline for Indian real-estate price estimation.",
+    status: "Completed",
+    image: "assets/house-price.png",
+    accent: "blue",
+    features: [
+      "Data preprocessing and feature engineering",
+      "Regression model training and evaluation",
+      "Outlier handling and visualization",
+      "Model comparison workflow",
+      "Prediction-focused user experience",
+    ],
+    impact:
+      "Shows applied machine learning, data analysis, and model-building discipline beyond full-stack web work.",
+    category: ["ml", "fullstack"],
+    description:
+      "A machine learning project focused on predicting Indian house prices using data preprocessing, feature engineering, regression models, and visualization-driven analysis.",
+    tags: ["Python", "Scikit-learn", "Pandas", "NumPy", "ML"],
+    links: [
+      { label: "GitHub", href: "https://github.com/Mizbataranumm/Indian-House-Price-Prediction-System" },
+      { label: "ML Notes", href: "#skills" },
+    ],
+  },
+  {
+    id: "pharmaflow",
+    name: "PharmaFlow Pro",
+    title: "PharmaFlow Pro",
+    tagline: "Healthcare workflow platform for pharmacy operations and inventory flow.",
+    status: "Completed",
+    image: "assets/pharmaflow.png",
+    accent: "teal",
+    features: [
+      "Medicine and inventory workflow design",
+      "Role-oriented operational screens",
+      "Dashboard-style pharmacy management",
+      "Searchable records and structured data",
+      "Healthcare-focused product thinking",
+    ],
+    impact:
+      "Adds domain depth by showing how software can support structured healthcare and pharmacy operations.",
+    category: ["fullstack", "healthcare"],
+    description:
+      "A pharmacy workflow and management project focused on operational clarity, inventory visibility, and structured healthcare process handling.",
+    tags: ["React", "Node.js", "MongoDB", "Dashboard", "Healthcare"],
+    links: [
+      { label: "GitHub", href: "https://github.com/Mizbataranumm/PharmaFlow-Pro" },
+      { label: "Discuss", href: "#contact" },
+    ],
+  },
+  {
+    id: "skillswap",
+    name: "SkillSwap",
+    title: "SkillSwap",
+    tagline: "Peer learning platform for exchanging skills through fair contribution.",
+    status: "Completed",
+    image: "assets/skillswap.png",
+    accent: "gold",
+    features: [
+      "Teach-and-learn exchange flow",
+      "Karma-based contribution concept",
+      "User profiles and skill listings",
+      "Session-oriented product workflow",
+      "Community-first learning design",
+    ],
+    impact:
+      "Shows product thinking, user experience design, and community-oriented software beyond security-only projects.",
+    category: ["fullstack", "product"],
+    description:
+      "A peer learning platform where users can exchange skills, discover mentors or learners, and build contribution-based learning relationships.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Product UX", "Community"],
+    links: [
+      { label: "GitHub", href: "https://github.com/Mizbataranumm/SkillSwap" },
+      { label: "Discuss", href: "#contact" },
+    ],
+  },
 ];
 
 const skills = [
@@ -508,11 +586,8 @@ function typeHeroText(speed = 38) {
 function animateCounter(counter) {
   const target = Number(counter.dataset.value || "0");
   const decimals = Number(counter.dataset.decimals || "0");
-  const suffix = counter.dataset.suffix || "";
   const duration = 1400;
   const start = performance.now();
-
-  counter.dataset.renderSuffix = suffix;
 
   function tick(now) {
     const progress = Math.min(1, (now - start) / duration);
@@ -529,21 +604,31 @@ function animateCounter(counter) {
   requestAnimationFrame(tick);
 }
 
+function resetCounter(counter) {
+  const decimals = Number(counter.dataset.decimals || "0");
+  counter.textContent = Number(0).toFixed(decimals);
+}
+
 function observeCounters() {
   if (!counters.length) return;
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (!entry.isIntersecting || entry.target.dataset.counted === "true") return;
-        entry.target.dataset.counted = "true";
-        animateCounter(entry.target);
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+        } else {
+          resetCounter(entry.target);
+        }
       });
     },
     { threshold: 0.35, rootMargin: "0px 0px -80px 0px" }
   );
 
-  counters.forEach((counter) => observer.observe(counter));
+  counters.forEach((counter) => {
+    resetCounter(counter);
+    observer.observe(counter);
+  });
 }
 
 function initLoadingScreen() {

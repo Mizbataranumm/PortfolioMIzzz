@@ -46,6 +46,9 @@ The site highlights secure backend engineering, cloud security foundations, auth
 | JWT & OAuth2 Authorization Server | Planned | Authentication, authorization, secure APIs |
 | Secure CivicPulse | Deployed | RBAC, JWT, secure civic workflows |
 | Coderift Secure Collaboration | Deployed | Secure WebSockets, sandboxed execution |
+| Indian House Price Prediction System | Completed | Machine learning, real-estate prediction |
+| PharmaFlow Pro | Completed | Healthcare workflows, pharmacy operations |
+| SkillSwap | Completed | Peer learning, community product UX |
 
 ## Tech Stack
 
@@ -73,19 +76,22 @@ http://localhost:5500
 
 ```txt
 .
-├── assets/
-│   ├── auth-server.png
-│   ├── civicpulse.png
-│   ├── coderift.png
-│   ├── favicon.png
-│   ├── MizbaTaranum_Resume.pdf
-│   ├── password-analyzer.png
-│   ├── security-command-center.png
-│   └── vulnerability-scanner.png
-├── index.html
-├── script.js
-├── styles.css
-└── README.md
+|-- assets/
+|   |-- auth-server.png
+|   |-- civicpulse.png
+|   |-- coderift.png
+|   |-- favicon.png
+|   |-- house-price.png
+|   |-- MizbaTaranum_Resume.pdf
+|   |-- password-analyzer.png
+|   |-- pharmaflow.png
+|   |-- security-command-center.png
+|   |-- skillswap.png
+|   `-- vulnerability-scanner.png
+|-- index.html
+|-- script.js
+|-- styles.css
+`-- README.md
 ```
 
 ## Deployment
@@ -104,4 +110,3 @@ For GitHub Pages, publish the repository and enable Pages from the repository se
 - Email: `mizbataranum309@gmail.com`
 - LinkedIn: [linkedin.com/in/mizba-taranum](https://linkedin.com/in/mizba-taranum)
 - GitHub: [github.com/Mizbataranumm](https://github.com/Mizbataranumm)
-
