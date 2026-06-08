@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/mizba-logo.svg" alt="Mizba Taranum logo" width="520" />
+</p>
+
 # Mizba Taranum Portfolio
 
 A dark, interactive cybersecurity-focused portfolio for Mizba Taranum, built as a lightweight static site with HTML, CSS, and JavaScript.
@@ -82,6 +86,8 @@ http://localhost:5500
 |   |-- coderift.png
 |   |-- favicon.png
 |   |-- house-price.png
+|   |-- mizba-logo.svg
+|   |-- mizba-mark.svg
 |   |-- MizbaTaranum_Resume.pdf
 |   |-- password-analyzer.png
 |   |-- pharmaflow.png

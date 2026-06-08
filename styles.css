@@ -243,23 +243,22 @@ body.light .site-header.menu-open {
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
-  border: 1px solid rgba(147, 197, 253, 0.35);
-  background: linear-gradient(135deg, #14b8a6, #2563eb 55%, #7c3aed);
-  color: #ffffff;
-  font-size: 0.76rem;
-  font-weight: 950;
-  letter-spacing: 0;
-  transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
+  display: block;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  filter: drop-shadow(0 10px 22px rgba(56, 189, 248, 0.2));
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
 }
 
 .brand:hover .brand-mark {
-  border-color: rgba(255, 255, 255, 0.4);
-  filter: saturate(1.2);
+  transform: translateY(-1px) scale(1.03);
+  filter: drop-shadow(0 14px 28px rgba(139, 92, 246, 0.28));
 }
 
 .brand-dot {

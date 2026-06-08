@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 220" role="img" aria-labelledby="title desc">
+  <title id="title">Mizba Taranum logo</title>
+  <desc id="desc">Horizontal Mizba Taranum brand logo with an MT monogram and cybersecurity tagline.</desc>
+  <defs>
+    <linearGradient id="markBg" x1="28" y1="26" x2="190" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="244" y1="70" x2="640" y2="154" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="0.48" stop-color="#bfdbfe"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="220" rx="38" fill="#05070c"/>
+  <rect x="32" y="31" width="158" height="158" rx="38" fill="#07111d"/>
+  <path d="M111 42 176 81v58l-65 39-64-39V81l64-39Z" fill="url(#markBg)" opacity="0.2"/>
+  <path d="M111 48 170 83v54l-59 35-58-35V83l58-35Z" fill="none" stroke="url(#markBg)" stroke-width="3"/>
+  <path d="M68 142V78h18.5L111 109l24.7-31H154v64h-17.2v-38l-20.4 25h-10.8l-20.3-25v38H68Z" fill="#f8fbff"/>
+  <path d="M100 78h55v16h-19v48h-17V94h-19V78Z" fill="url(#markBg)"/>
+  <text x="230" y="98" fill="url(#textGrad)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="50" font-weight="900" letter-spacing="-1">Mizba Taranum</text>
+  <text x="233" y="139" fill="#93c5fd" font-family="Consolas, JetBrains Mono, monospace" font-size="15" font-weight="700" letter-spacing="3">APPLICATION SECURITY  |  CLOUD SECURITY  |  FULL-STACK</text>
+  <path d="M233 162h372" stroke="url(#markBg)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M620 162h40" stroke="#f8fbff" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+</svg>
