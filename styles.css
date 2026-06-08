@@ -427,7 +427,12 @@ body.light .icon-button {
   color: #ffffff;
 }
 
-.hero-copy,
+.hero-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+}
+
 .hero-visual {
   position: relative;
   z-index: 2;
