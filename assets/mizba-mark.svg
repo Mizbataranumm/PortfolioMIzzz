@@ -1,31 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">Mizba Taranum MT mark</title>
-  <desc id="desc">A premium geometric MT monogram with teal, blue, and violet gradients.</desc>
+  <title id="title">Mizba Taranum brand mark</title>
+  <desc id="desc">A sharp luminous MT monogram for Mizba Taranum.</desc>
   <defs>
-    <linearGradient id="bg" x1="24" y1="24" x2="232" y2="232" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#07111d"/>
-      <stop offset="0.45" stop-color="#0b1628"/>
-      <stop offset="1" stop-color="#111032"/>
+    <linearGradient id="base" x1="20" y1="24" x2="232" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.52" stop-color="#08111f"/>
+      <stop offset="1" stop-color="#140a2e"/>
     </linearGradient>
-    <linearGradient id="gem" x1="45" y1="45" x2="214" y2="220" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2dd4bf"/>
-      <stop offset="0.5" stop-color="#38bdf8"/>
-      <stop offset="1" stop-color="#8b5cf6"/>
+    <linearGradient id="neon" x1="42" y1="42" x2="214" y2="218" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00f5d4"/>
+      <stop offset="0.42" stop-color="#22d3ee"/>
+      <stop offset="0.72" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#f472b6"/>
     </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.25 0 0 0 0 0.77 0 0 0 0 1 0 0 0 .65 0"/>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#22d3ee" flood-opacity="0.32"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#a78bfa" flood-opacity="0.55"/>
     </filter>
   </defs>
-  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
-  <path d="M127.6 20 222 76.2v103.6L127.6 236 34 179.8V76.2L127.6 20Z" fill="url(#gem)" opacity="0.13"/>
-  <path d="M127.6 29.5 213 80.8v98.4l-85.4 51.3-84.6-51.3V80.8l84.6-51.3Z" fill="none" stroke="url(#gem)" stroke-width="4" opacity="0.72"/>
-  <path d="M64 174V82h25.5l38.3 47.6L166.3 82H192v92h-24.2v-56.3l-34.1 41.2h-12l-33.8-41.2V174H64Z" fill="#f8fbff"/>
-  <path d="M106 82h86v22h-31v70h-24v-70h-31V82Z" fill="url(#gem)" filter="url(#glow)"/>
-  <circle cx="204" cy="53" r="6" fill="#2dd4bf"/>
-  <circle cx="52" cy="203" r="5" fill="#8b5cf6"/>
+  <rect x="10" y="10" width="236" height="236" rx="54" fill="url(#base)"/>
+  <path d="M128 24 221 78v100l-93 54-93-54V78l93-54Z" fill="none" stroke="url(#neon)" stroke-width="9" filter="url(#shadow)"/>
+  <path d="M63 174V78h23l42 50 42-50h23v96h-25v-55l-31 37h-18l-31-37v55H63Z" fill="#f8fafc"/>
+  <path d="M101 78h91v24h-33v72h-25v-72h-33V78Z" fill="url(#neon)" filter="url(#shadow)"/>
+  <path d="M47 58h29" stroke="url(#neon)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M180 198h29" stroke="url(#neon)" stroke-width="8" stroke-linecap="round"/>
 </svg>

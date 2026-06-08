@@ -432,6 +432,11 @@ body.light .icon-button {
   position: relative;
   z-index: 2;
   max-width: 640px;
+  padding: 10px;
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.28), rgba(139, 92, 246, 0.14), rgba(244, 114, 182, 0.16));
+  box-shadow: 0 30px 90px rgba(34, 211, 238, 0.16);
 }
 
 .hero-grid,
@@ -769,7 +774,7 @@ body.light .button.text-link:hover {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: var(--shadow);
 }
 
@@ -777,6 +782,16 @@ body.light .button.text-link:hover {
   margin-top: 12px;
   color: #a1a1aa;
   font-size: 0.95rem;
+}
+
+body.light .hero-visual {
+  background:
+    linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(124, 58, 237, 0.12), rgba(219, 39, 119, 0.12));
+  box-shadow: 0 30px 90px rgba(37, 99, 235, 0.2);
+}
+
+body.light .hero-visual figcaption {
+  color: #64748b;
 }
 
 .scroll-hint {

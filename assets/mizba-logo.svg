@@ -1,26 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 220" role="img" aria-labelledby="title desc">
-  <title id="title">Mizba Taranum logo</title>
-  <desc id="desc">Horizontal Mizba Taranum brand logo with an MT monogram and cybersecurity tagline.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 240" role="img" aria-labelledby="title desc">
+  <title id="title">Mizba Taranum brand logo</title>
+  <desc id="desc">Premium Mizba Taranum wordmark with luminous MT monogram.</desc>
   <defs>
-    <linearGradient id="markBg" x1="28" y1="26" x2="190" y2="190" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2dd4bf"/>
-      <stop offset="0.5" stop-color="#38bdf8"/>
-      <stop offset="1" stop-color="#8b5cf6"/>
+    <linearGradient id="neon" x1="34" y1="34" x2="205" y2="205" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00f5d4"/>
+      <stop offset="0.42" stop-color="#22d3ee"/>
+      <stop offset="0.72" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#f472b6"/>
     </linearGradient>
-    <linearGradient id="textGrad" x1="244" y1="70" x2="640" y2="154" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#f8fbff"/>
-      <stop offset="0.48" stop-color="#bfdbfe"/>
-      <stop offset="1" stop-color="#a78bfa"/>
+    <linearGradient id="copy" x1="250" y1="70" x2="760" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.42" stop-color="#bfdbfe"/>
+      <stop offset="0.78" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f0abfc"/>
     </linearGradient>
+    <filter id="glow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#22d3ee" flood-opacity="0.3"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#a78bfa" flood-opacity="0.5"/>
+    </filter>
   </defs>
-  <rect width="820" height="220" rx="38" fill="#05070c"/>
-  <rect x="32" y="31" width="158" height="158" rx="38" fill="#07111d"/>
-  <path d="M111 42 176 81v58l-65 39-64-39V81l64-39Z" fill="url(#markBg)" opacity="0.2"/>
-  <path d="M111 48 170 83v54l-59 35-58-35V83l58-35Z" fill="none" stroke="url(#markBg)" stroke-width="3"/>
-  <path d="M68 142V78h18.5L111 109l24.7-31H154v64h-17.2v-38l-20.4 25h-10.8l-20.3-25v38H68Z" fill="#f8fbff"/>
-  <path d="M100 78h55v16h-19v48h-17V94h-19V78Z" fill="url(#markBg)"/>
-  <text x="230" y="98" fill="url(#textGrad)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="50" font-weight="900" letter-spacing="-1">Mizba Taranum</text>
-  <text x="233" y="139" fill="#93c5fd" font-family="Consolas, JetBrains Mono, monospace" font-size="15" font-weight="700" letter-spacing="3">APPLICATION SECURITY  |  CLOUD SECURITY  |  FULL-STACK</text>
-  <path d="M233 162h372" stroke="url(#markBg)" stroke-width="5" stroke-linecap="round"/>
-  <path d="M620 162h40" stroke="#f8fbff" stroke-width="5" stroke-linecap="round" opacity="0.4"/>
+  <rect width="920" height="240" rx="42" fill="#020617"/>
+  <rect x="34" y="34" width="172" height="172" rx="42" fill="#07111f"/>
+  <path d="M120 48 184 86v68l-64 38-64-38V86l64-38Z" fill="none" stroke="url(#neon)" stroke-width="6" filter="url(#glow)"/>
+  <path d="M70 151V84h17l33 39 33-39h17v67h-19v-39l-23 28h-16l-23-28v39H70Z" fill="#f8fafc"/>
+  <path d="M102 84h68v18h-24v49h-20v-49h-24V84Z" fill="url(#neon)" filter="url(#glow)"/>
+  <text x="250" y="105" fill="url(#copy)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="56" font-weight="900" letter-spacing="-1.5">Mizba Taranum</text>
+  <text x="254" y="150" fill="#67e8f9" font-family="Consolas, JetBrains Mono, monospace" font-size="15" font-weight="700" letter-spacing="3">SECURE FULL-STACK  /  CLOUD SECURITY  /  AI SYSTEMS</text>
+  <path d="M254 176h420" stroke="url(#neon)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M696 176h58" stroke="#ffffff" stroke-opacity="0.5" stroke-width="6" stroke-linecap="round"/>
 </svg>
