@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/mizba-logo.svg" alt="Mizba Taranum logo" width="520" />
+  <img src="assets/mizba-logo-premium.png" alt="Mizba Taranum logo" width="620" />
 </p>
 
 # Mizba Taranum Portfolio
@@ -86,7 +86,9 @@ http://localhost:5500
 |   |-- coderift.png
 |   |-- favicon.png
 |   |-- house-price.png
+|   |-- mizba-logo-premium.png
 |   |-- mizba-logo.svg
+|   |-- mizba-mark-premium.png
 |   |-- mizba-mark.svg
 |   |-- MizbaTaranum_Resume.pdf
 |   |-- password-analyzer.png
